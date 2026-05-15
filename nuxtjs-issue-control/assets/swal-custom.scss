@@ -1,0 +1,21 @@
+@import 'sweetalert2/dist/sweetalert2.min.css';
+
+.swal2-styled.swal2-confirm {
+  background-color: #1976D2 !important;
+  color: #ffffff !important;
+}
+
+.swal2-styled.swal2-cancel {
+  color: #ffffff !important;
+}
+
+.swal2-container .swal2-modal .swal2-actions .swal2-styled {
+  color: #ffffff !important;
+}
+
+/* Fix: v-simple-checkbox inside autocomplete dropdown items intercepts clicks,
+   preventing the parent v-list-item from toggling selection.
+   pointer-events: none lets clicks pass through to the v-list-item handler. */
+.v-list-item__action .v-simple-checkbox {
+  pointer-events: none;
+}
